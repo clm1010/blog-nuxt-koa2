@@ -1,18 +1,11 @@
 <template>
-  <div>
+  <el-container class="login-container">
     <Nuxt />
-    <my-footer />
-  </div>
+  </el-container>
 </template>
 <script>
-// import MyHeader from '@/components/public/header/index'
-import MyFooter from '@/components/public/footer/index'
 export default {
-  name: 'Default',
-  components: {
-    // MyHeader,
-    MyFooter,
-  },
+  name: 'LoginLayout',
   data() {
     return {
       title: 'Indutri - Vue Nuxt Industry & Factory Business Template'
@@ -27,4 +20,9 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.login-container {
+  height: 100%;
+  border: 1px solid red;
+}
+</style>
